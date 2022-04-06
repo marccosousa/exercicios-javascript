@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando!</title>
+    <style>
+        body{
+            background-color: rgba(57, 57, 160, 0.849);
+            color: black;
+            font: normal 18pt Arial
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeiros passos com DOM! uiuiui</h1>
+    
+    <p>Tá chegando a <strong>HORA!</strong></p>
+    <p>Aprendendo o <strong>DOM!</strong></p>
+
+    <div id = 'mec'><strong>Clique aqui!</strong> </div>
+
+    <script>
+        var p1 = window.document.getElementsByName('mec')[0]
+        var corpo = window.document.body
+        
+        /*
+        p1.style.color = 'red'
+        p1.style.background = 'black'
+        corpo.style.background = 'black'
+        window.alert(p1.innerText)
+        document.write(p2.innerHTML)
+        var d = window.document.getElementById('mec')
+        d.style.color = 'red'
+        d.style.background = 'black'
+        d.innerText = 'pai tá on'
+        */
+       var d = window.document.querySelector('div#mec')
+       d.style.color = 'red'
+       d.style.background = 'black'
+       
+        
+    </script>   
+    
+</body>
+</html>

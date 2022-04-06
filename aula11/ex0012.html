@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN KK</title>
+</head>
+<body>
+    <h1>Sistemas de multas do DETRANRJ</h1>
+    Velocidade do carro: <input type="number" name="" id="rcaixa"> Km/h. 
+    <input type="button" value="Verificar" onclick="verificar ()">
+    <p>A velocidade máxima permitida é de <strong>80Km/h</strong></p>
+    <div id = res>
+        
+    </div>
+
+    <script>
+        function verificar () {
+            var rcaixa = window.document.querySelector('input#rcaixa')
+            var res = window.document.querySelector('div#res')
+            var vel = Number(rcaixa.value)
+            res.innerHTML = `A sua velocidade é de ${vel}Km/h `
+                        
+            if (vel > 80) {
+                res.innerHTML = '<p>Você ultrapassou o limite de velocidade! <strong>MULTADO CORNO!</strong<p>'
+                             
+            }
+            res.innerHTML += '<p><strong>SE BEBER NÃO DIRIJA!</strong></p>'          
+
+
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidades</title>
+</head>
+<body>
+    <h1>Nacionalidade!</h1>
+    <p>Em qual país você nasceu?</p>
+    <input type="text" name="" id="rcaixa">
+    <input type="button" value="Verificar" onclick="verificar ()">
+    <div id = nac>
+
+    </div>
+    <script>
+        function verificar () {
+        var rcaixa = window.document.querySelector('input#rcaixa')
+        var nac = window.document.querySelector('div#nac')
+        var país = rcaixa.value
+
+        if (país === 'Brasil', 'brasil') {
+            nac.innerHTML = `<p>Se você nasceu no ${país}, você é Brasileiro uhul!</p>`
+            nac.innerHTML += 'Bora de breja!'
+        } else {
+            nac.innerHTML = `Se você nasceu no(a) ${país}, você é estrangeiro kkk sai fora`
+        }
+        }
+       
+        
+    </script>
+    
+</body>
+</html>

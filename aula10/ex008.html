@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test2</title>
+    <style>
+        div#unico {
+            font: normal 16pt Comic;
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            line-height: 200px;
+
+        }
+    </style>
+</head>
+<body>
+<div id = 'unico'>
+    Botão carreira solo
+</div>
+
+<script>
+    var div1 = window.document.querySelector('div#unico')
+    div1.addEventListener ('click', clicou)
+    div1.addEventListener ('mouseenter', entrou)
+    div1.addEventListener ('mouseout', saiu)
+    
+    function clicou() {
+        div1.innerHTML = 'Clicou, amor'
+        div1.style.background = 'blue'
+    }
+    function entrou () {
+        div1.innerHTML = 'Tá funcionando'
+    }
+    function saiu () {
+        div1.innerHTML = 'saiu kkk xuxu blz'
+        div1.style.background = 'red'
+        
+        
+    }
+</script>
+    
+</body>
+</html>

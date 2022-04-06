@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM2</title>
+    <style>
+        body {
+            font: normal 14pt Arial;
+            color: red;
+            background-color: rgb(73, 73, 73);
+            
+        }
+        div#botao1 {
+            font: normal 16pt comic;
+            color: white;
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Eventos DOM2</h1>
+    <p>Test2 kkkkk burrão</p>
+    <p>Só p ter ctz q tô aprendendo!</p>
+    <div id = 'botao1' onclick="clicou()" onmouseenter="entrou()" onmouseout="saiu()">
+        Test do botão
+    </div>
+    <script>
+       var div1 = window.document.querySelector('div#botao1')
+       function clicou() {
+           div1.innerHTML = 'Clicou! tá funfando!'
+           div1.style.background = 'green'
+       }
+       function entrou () {
+           div1.innerHTML = 'Entrou, tá funfando'
+           div1.style.background = 'purple'
+       }
+       function saiu () {
+           div1.innerHTML = 'Test do botão'
+           div1.style.background = 'blue'
+       }
+            
+        
+    </script>
+
+</body>
+</html>

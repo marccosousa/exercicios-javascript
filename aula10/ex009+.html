@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>test2</title>
+    <style>
+        h1{
+            font: normal 25pt comic;
+            color: red
+        }
+        input {
+            width: 100px;
+            font: normal 18pt comic      
+        }
+        div#res{
+            margin-top: 10px;
+            font: normal 18pt comic;
+            background-color: red;
+            width: 200px;            
+        }
+    </style>
+</head>
+<body>
+    <h1><strong>Somando2, só p ter ctz</strong></h1>
+    <input type="number" name="" id="num1"> +
+    <input type="number" name="" id="num2">
+    <input type="button" value="Somar" onclick="somar ()">
+    <div id = 'res'>Resultado:</div>
+    
+    <script>
+        function somar () {
+            var num1 = window.document.querySelector('input#num1')
+            var num2 = window.document.querySelector('input#num2')
+            var res = window.document.querySelector('div#res')
+            var n1 = Number (num1.value)
+            var n2 = Number (num2.value)
+            var s = n1 + n2 
+            res.innerHTML = `O resultado da soma entre ${n1} e ${n2} é igual a: ${s}`
+            
+        }
+    </script>
+    
+</body>
+</html>
